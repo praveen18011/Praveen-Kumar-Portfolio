@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portfolio.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Praveen Kumar Portfolio</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "H61ZvcrC7C8iUA8o0",
+          });
+       })();
+    </script>
+</head>
+<body>
+
+ <!-- /*header section*/ -->
+  <header id="home" class="header">
+     <label>Praveen<span>.</span></label>
+
+     <nav id="navbar" class="navbar">
+        <a class="active-1" href="#home">Home</a>
+        <a class="active-2" href="#about">About</a>
+        <a class="active-3" href="#education">Education</a>
+        <a class="active-4" href="#skills">Skills</a>
+        <a class="active-5" href="#projects">Projects</a>
+        <a class="active-6" href="#contact">Contact</a>
+        <span class="hover-effect"></span>
+     </nav>
+      
+     <div onclick="handleMenubar()" class="menu-icon">
+      <i id="menuIcon" class="fa-solid fa-bars"></i>
+     </div>
+
+     <div onclick="handleCancelbar()" id="menuIcon2" class="menu-icon2">
+      <i class="fa-solid fa-xmark"></i>
+     </div>
+  </header>
+
+ <!-- /*home section*/ -->
+  <section id="home" class="home">
+     <div class="home-info">
+        <h5>Hello Everyone, I'm</h5>
+        <h1>Praveen 
+         <span>Kumar</span>
+        </h1>
+        <h2>I'm a
+         <span>FullStack Developer</span>
+        </h2>
+        <p>I am a passionate and versatile Full Stack Developer in both front-end and back-end technologies. My expertise includes building dynamic, responsive web applications using modern frameworks like React for the front-end, while leveraging server-side technologies such as Node.js and Java to handle back-end functionality. </p>
+        <a href="./Resume/Praveen Kumar Resume.pdf" ><button>Download CV</button></a>
+     </div>
+     <div class="image-box1">
+       <div class="image-box2">
+         <img src="./Images/Praveen Kumar portfolio photo.png" alt="Main photo"/>
+       </div>
+      </div>
+
+      <a href="#about" class="scroll-arrow">
+         <i class="fa-solid fa-arrow-down-long"></i>
+         <label>Scroll Down</label>
+      </a>
+  </section>
+
+
+ <!-- /*about section*/ -->
+   <section class="about-info" id="about">
+          <div class="about-left">
+              <img src="./Images/Praveen Kumar portfolio photo.png" alt="About Photo"/>
+          </div>
+
+          <div class="about-right">
+            <h1>About Me</h1>
+            <label>Who is <span>Praveen?</span></label>
+
+            <div class="description">
+               <p>Praveen is a Fullstack Developer. He's skilled in both frontend and backend. He's skilled in database management, API design, and cloud deployment, and He's always eager to explore new technologies to enhance the user experience and streamline development processes. With a strong problem-solving mindset and a commitment to writing clean, efficient code, I thrive in collaborative environments and enjoy taking on complex challenges to deliver high-quality software solutions.</p>
+            </div>
+          </div>
+   </section>
+
+
+ <!-- /*education section*/ -->
+   <section id="education" class="education-info">
+     <div class="education">
+        <h1>Education</h1>
+     </div>
+     <div class="education-details">
+       <div class="education-container">
+         <div class="sslc">
+            <h1>SSLC</h1>
+            <label>Mark:<span>399/500</span></label>
+            <label>Percentage:<span>79.8%</span></label>
+            <label>Board:<span>Tamilnadu State Board</span></label>
+            <label>Scholling:<span>Sri Venkateshwara Matriculation Higher secondary School</span></label>
+            <label>Place:<span>Chennai</span></label>
+            <label>Academic Year:<span>2018-2019</span></label>
+         </div>
+       </div>
+        
+       <div class="education-container">
+         <div class="hsc">
+            <h1>HSC</h1>
+            <label>Mark:<span>531.89/600</span></label>
+            <label>Percentage:<span>88.64%</span></label>
+            <label>Board:<span>Tamilnadu State Board</span></label>
+            <label>Scholling:<span>Sri Venkateshwara Matriculation Higher secondary School</span></label>
+            <label>Place:<span>Chennai</span></label>
+            <label>Academic Year:<span>2020-2021</span></label>
+           </div>
+   
+       </div>
+        
+       <div class="education-container">
+         <div class="clg">
+            <h1>Bachelors Degree</h1>
+            <label>Degree:<span>B.com</span></label>
+            <label>Specialisation:<span>Bank Management</span></label>
+            <label>CGPA:<span>7.0</span></label>
+            <label>College Name:<span>Dwaraka Doss Goverdhan Doss Vaishnav College(DGVC)</span></label>
+            <label>Place:<span>Chennai</span></label>
+            <label>Academic Year:<span>2021-2024</span></label>
+         </div> 
+       </div>  
+     </div>
+
+   </section>
+
+
+   <!-- /*skills section*/ -->
+    <section class="skills-info" id="skills">
+         <h1>My Skills</h1>
+          <h2>Building responsive websites,API's,Database</h2>
+      <div class="skills-container">
+
+       <div class="html">
+          <div>
+            <img src="./Skills images/html image.png" alt="Html Image" class="img"/>
+          </div>
+          <p>HTML</p>
+        </div>
+
+        <div class="css">
+          <div>
+            <img src="./Skills images/css image.png" alt="Css Image" class="img"/>
+          </div>
+          <p>CSS</p>
+        </div>
+
+        <div class="js">
+          <div>
+           <img src="./Skills images/js image.png" alt="Js Image" class="img"/>
+          </div>
+          <p>JAVA SCRIPT</p>
+        </div>
+
+        <div class="react">
+          <div>
+            <img src="./Skills images/react js image.png" alt="React Image" class="img-react"/>
+          </div>
+          <p>REACT.JS</p>
+        </div>
+
+        <div class="java">
+          <div>
+            <img src="./Skills images/java image.png" alt="React Image" class="img"/>
+          </div>
+          <p>JAVA</p>
+        </div>
+
+        <div class="springboot">
+          <div>
+            <img src="./Skills images/springboot image.png" alt="Springboot Image" class="img"/>
+          </div>
+          <p>SPRINBOOT</p>
+        </div>
+
+        <div class="mysql">
+          <div>
+            <img src="./Skills images/mysql image.png" alt="MySql Image" class="img"/>
+          </div>
+          <p>MYSQL</p>
+        </div>
+
+        <div class="bootstrap">
+          <div>
+            <img src="./Skills images/Bootstrap image.png" alt="Bootstrap Image" class="img"/>
+          </div>
+          <p>BOOTSTRAP</p>
+        </div>
+
+      </div>   
+    </section>
+
+    <!-- project section -->
+     <section class="project-info" id="projects">
+        <div class="project-top">
+          <h1>My Projects</h1>
+          <p>Transforming ideas into funtional and visually stunning projects</p>
+        </div>
+
+        <div class="project-bottom">
+           <div class="projects">
+             <div class="project-img">
+                <img src="./Project images/Portfolio project.png" alt="Project 1"/>
+             </div>
+             <div class="project-details">
+                <p>Responsive Personal Portfolio</p>
+             </div>
+             <a href="" class="project-link">
+               <i class="fa-solid fa-arrow-right-long"></i>
+             </a>
+             <label>
+              <i class="fa-solid fa-file-shield"></i>
+            </label>
+           </div>
+
+           <div class="projects">
+            <div class="project-img">
+               <img src="./Project images/Portfolio project.png" alt="Project 1"/>
+            </div>
+            <div class="project-details">
+               <p>Responsive Personal Portfolio</p>
+            </div>
+            <a href="" class="project-link">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+            <label>
+             <i class="fa-solid fa-file-shield"></i>
+           </label>
+          </div>
+        </div>
+     </section>
+
+    <!-- /*contact sectuon*/ -->
+     <section class="contact-info" id="contact">
+       <div class="contact-details">
+         <h1>Let's get in touch</h1>
+         <p>Building modern, responsive websites-connect with me to get started!</p>
+         <a href="https://www.google.com/maps/search/?api=1&query= No:4a/23,Maya Street,Ambattur,Chennai-600053" target="_blank"><i class="fa-solid fa-location-dot"></i> No:4a/23,Maya Street,Ambattur,Chennai-600053</a>
+         <a href="mailto:praveenkumarn0324@gmail.com"><i class="fa-solid fa-envelope"></i> praveenkumarn0324@gamil.com</a>
+         <a href="tel:8778763796"><i class="fa-solid fa-phone"></i> 8778763796</a>
+       </div>
+
+       <form id="handleSend" class="contact-form">
+         <h1>Contact Me</h1>
+         <div class="name">
+           <input type="text" class="fname" placeholder="First name" id="fName"/>
+           <label id="firstError"></label>
+
+           <input type="text" class="lname" placeholder="Last name" id="lName"/>
+           <!-- <label id="lastError"></label> -->
+         </div> <br/>
+
+         <input type="email" placeholder="E-mail" id="email"/>
+         <label id="emailError"></label>
+
+         <input type="number" placeholder="Contact Number" id="phone"/>
+         <label id="phoneError"></label>
+
+         <textarea type="text" placeholder="Enter your Message" id="message"></textarea>
+         <label id="messageError"></label>
+
+         <button type="submit">Send</button>
+       </form>
+     </section>
+
+<script>
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href").replace("#", "");
+      if (href === current) {
+        moveHoverEffect(link.classList[0]);
+      }
+    });
+  });
+
+
+  function moveHoverEffect(className) {
+  const hoverEffect = document.querySelector(".hover-effect");
+
+  // Check if screen is mobile
+  const isMobile = window.innerWidth <= 768;
+
+  switch (className) {
+    case "active-1":
+      if (isMobile) {
+        hoverEffect.style.top = "0px";
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "100%";
+      } else {
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "95px";
+        hoverEffect.style.top = "0px";
+      }
+      break;
+
+    case "active-2":
+      if (isMobile) {
+        hoverEffect.style.top = "50px";
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "100%";
+      } else {
+        hoverEffect.style.left = "110px";
+        hoverEffect.style.width = "95px";
+        hoverEffect.style.top = "0px";
+      }
+      break;
+
+    case "active-3":
+      if (isMobile) {
+        hoverEffect.style.top = "100px";
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "100%";
+      } else {
+        hoverEffect.style.left = "225px";
+        hoverEffect.style.width = "150px";
+        hoverEffect.style.top = "0px";
+      }
+      break;
+
+    case "active-4":
+      if (isMobile) {
+        hoverEffect.style.top = "150px";
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "100%";
+      } else {
+        hoverEffect.style.left = "390px";
+        hoverEffect.style.width = "95px";
+        hoverEffect.style.top = "0px";
+      }
+      break;
+
+    case "active-5":
+      if (isMobile) {
+        hoverEffect.style.top = "200px";
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "100%";
+      } else {
+        hoverEffect.style.left = "515px";
+        hoverEffect.style.width = "120px";
+        hoverEffect.style.top = "0px";
+      }
+      break;
+
+    case "active-6":
+      if (isMobile) {
+        hoverEffect.style.top = "250px";
+        hoverEffect.style.left = "0px";
+        hoverEffect.style.width = "100%";
+      } else {
+        hoverEffect.style.left = "648px";
+        hoverEffect.style.width = "120px";
+        hoverEffect.style.top = "0px";
+      }
+      break;
+  }
+}
+
+  
+       function handleMenubar(){
+          let a = document.getElementById("navbar").style.display="none"
+          let b = document.getElementById("menuIcon")
+          let c = document.getElementById("menuIcon2")
+
+          if(navbar.style.display=="none"){
+            navbar.style.display= "flex"
+            menuIcon.style.display="none"
+            menuIcon2.style.display="flex"
+          }
+       }
+
+
+       function handleCancelbar(){
+        let a = document.getElementById("navbar").style.display="none"
+          let b = document.getElementById("menuIcon")
+          let c = document.getElementById("menuIcon2").style.display="flex"
+
+          if(menuIcon2.style.display="flex"){
+            menuIcon2.style.display="none"
+            menuIcon.style.display="flex"
+          }
+       }
+
+
+       document.getElementById('handleSend').addEventListener('submit',function(e){
+        e.preventDefault();
+
+      let valid = false;
+
+         const firstname = document.getElementById("fName").value.trim();
+         const lastname = document.getElementById("lName").value.trim();
+         const email = document.getElementById("email").value.trim()
+         const phone = document.getElementById("phone").value.trim()
+         const message = document.getElementById("message").value
+
+         const firsterror = document.getElementById("firstError").textContent= ""
+        //  const lasterroe = document.getElementById("lastError").textContent=""
+         const emailerror = document.getElementById("emailError").textContent= ""
+         const phoneerror = document.getElementById("phoneError").textContent= ""
+         const messageerror = document.getElementById("messageError").textContent= ""
+
+         if(!firstname){
+            firstError.textContent="First name required"
+            valid= true;
+         }
+         else{
+          firstError.textContent=""
+         }
+
+        //  if(!lastname){
+        //     lastError.textContent="Last name required"
+        //     valid= true;
+        //  }
+        //  else{
+        //   lastError.textContent=""
+        //  }
+
+         if(!email){
+            emailError.textContent="E-mail address required"
+            valid= true;
+         }
+         else{
+          emailError.textContent=""
+         }
+
+         if(!phone){
+            phoneError.textContent="Contact number required"
+            valid= true;
+         }
+         else{
+          phoneError.textContent=""
+         }
+
+         if(!message){
+            messageError.textContent="Type Something"
+            valid= true;
+         }
+         else{
+          messageError.textContent=""
+         }
+
+         if(!valid){
+          alert("Message sent sucessfully!!")
+         }
+
+
+         const serviceId = "service_og8c66g";
+         const templateId = "template_mv3q37k";
+
+         emailjs.send(serviceId, templateId, {
+          fName: firstname,
+          lName: lastname,
+          email: email,
+          phone: phone,
+          message: message
+         })
+          .then((reset) => {
+            document.getElementById("fName").value = "";
+            document.getElementById("lName").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("message").value = "";
+            console.log(reset);
+            // alert("Message sent successfully!!")
+          }, (err) => {
+            alert("Failed to send the message, please try again later")
+          });
+          
+       })
+</script>
+</body>
+</html> 
+
