@@ -568,6 +568,7 @@ body{
     padding: 20px 0;
     text-align: center;
     margin-left: -10px;
+    margin-top: 150px;
 }
 .skills-info h1 {
     font-size: 30px;
@@ -737,7 +738,7 @@ body{
     }
 
     .skills-info{
-        max-width: 780px;
+        max-width: 700px;
     }
 }
 
@@ -769,6 +770,136 @@ body{
 /*project section starts*/
 
 /* Base styles - Desktop first */
+
+/* .project-info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+}
+
+.project-top h1 {
+    font-size: 30px;
+    color: #7cf03d;
+    margin: 0;
+}
+
+.project-top p {
+    font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.project-bottom {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.projects {
+    flex: 1 1 45%;
+    max-width: 45%;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.project-img {
+    background: #323946;
+    border-radius: 25px;
+    padding: 5px;
+    width: 100%;
+}
+
+.project-img img {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.project-img img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.project-details p {
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-navigation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    background: #323946;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.project-navigation:hover {
+    background: #7cf03d;
+    cursor: pointer;
+}
+
+.project-navigation label{
+    font-size: 20px;
+    color: #7cf03d;
+    cursor: pointer;
+    background:#1f242d;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    animation: right 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes right {
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.project-navigation label:hover {
+    color: #7cf03d
+}
+
+.project-navigation i{
+    font-size: 30px;
+    color: #1f242d;
+}
+.project-navigation i:hover {
+    color: white
+} */
+
 
 .project-info {
     width: 100%;
@@ -804,7 +935,7 @@ body{
 
 .project-bottom {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; /* Allow wrapping */
     gap: 30px;
     justify-content: center;
     margin-top: 40px;
@@ -828,7 +959,7 @@ body{
 
 .project-img img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 25px;
     transition: 0.3s ease-in-out;
 }
@@ -853,37 +984,31 @@ body{
     text-overflow: ellipsis;
 }
 
-.project-link {
-    width: 150px;
-    display: inline-flex;
-    text-decoration: none;
-    background: #323946;
-    border-radius: 25px;
-    border: 2px solid #323946;
-    padding: 5px 10px;
+.project-navigation {
+    display: flex;
     align-items: center;
-    transition: 0.3s;
+    gap: 20px;
+    margin-top: 10px;
+    background: #323946;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px 10px;
 }
 
-.project-link:hover {
+.project-navigation:hover {
     background: #7cf03d;
-    color: #1f242d;
     cursor: pointer;
 }
 
-.project-link i {
-    background: #1f242d;
-    border-radius: 25px;
+.project-navigation label {
+    font-size: 20px;
     color: #7cf03d;
-    font-size: 24px;
+    cursor: pointer;
+    background: #1f242d;
     padding: 10px;
-    transition: 0.5s;
+    border-radius: 50%;
     animation: right 0.3s ease-in-out infinite alternate;
-}
-
-.project-link:hover a i {
-    transform: scale(1.09);
-    color: #1f242d;
 }
 
 @keyframes right {
@@ -892,187 +1017,174 @@ body{
     }
 }
 
-.projects label i {
-    color: #1f242d;
-    position: absolute;
-    margin-left: -50px;
-    margin-top: 13px;
-    font-size: 30px;
+.project-navigation label:hover {
+    color: #7cf03d;
 }
 
-.projects label i:hover {
+.project-navigation i {
+    font-size: 30px;
+    color: #1f242d;
+}
+
+.project-navigation i:hover {
     color: white;
 }
 
-/* For screens up to 1024px */
-@media (max-width: 1024px) {
+/* Responsive styles */
+
+
+
+@media (max-width: 768px) {
     .projects {
         flex: 1 1 100%;
-        max-width: 100%;
+        max-width: 600px;
     }
 
-    .project-details p {
-        font-size: 17px;
-        white-space: normal;
+    .project-img img {
+        height: 300px;
     }
 
-    .project-link {
-        width: 140px;
+    .project-top{
+        max-width: 500px;
     }
 
-    .project-link i {
-        font-size: 22px;
-        padding: 8px;
-    }
-}
-
-/* For screens up to 780px */
-@media (max-width: 780px) {
-    .project-info{
-        width: 700;
-    }
     .project-top h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .project-top p {
-        font-size: 1.5rem;
-    }
-    .project-bottom{
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-img{
-        width:500px;
-    }
-
-    .project-details {
-        gap: 15px;
+        font-size: 1.7rem;
     }
 
     .project-details p {
         font-size: 16px;
     }
 
-    .project-link {
-        width: 130px;
-        padding: 4px 8px;
+    .project-navigation {
+        width: 90px;
+        height: 45px;
+        gap: 15px;
     }
 
-    .project-link:hover {
-        background: #7cf03d;
-        color: #1f242d;
-        cursor: pointer;
-    }
-
-    .project-link i {
-        font-size: 20px;
-        padding: 7px;
-    }
-
-    .project-link:hover a i {
-        transform: scale(1.09);
-        color: #1f242d;
-    }
-
-    .projects label i {
-        font-size: 24px;
-        margin-left: -40px;
-    }
-
-    .projects label i:hover {
-        color: white;
-    }
-}
-
-/* For screens up to 425px */
-@media (max-width: 425px) {
-    .project-top h1 {
-        font-size: 22px;
-    }
-
-    .project-top p {
-        font-size: 1.35rem;
-    }
-
-    .project-details p {
-        font-size: 15px;
-    }
-
-    .project-link {
-        width: 120px;
-    }
-
-    .project-link i {
+    .project-navigation label {
         font-size: 18px;
-        padding: 6px;
+        padding: 8px;
     }
 
-    .projects label i {
-        font-size: 22px;
-        margin-left: -35px;
+    .project-navigation i {
+        font-size: 26px;
     }
 }
 
-
-@media (max-width: 375px) {
+@media (max-width: 480px) {
+    .projects{
+        max-width: 500px;
+    }
     .project-top h1 {
         font-size: 20px;
     }
 
     .project-top p {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .project-details p {
         font-size: 14px;
     }
 
-    .project-link {
-        width: 110px;
-        padding: 4px 6px;
+    .project-navigation {
+        width: 80px;
+        height: 40px;
+        gap: 10px;
     }
 
-    .project-link i {
+    .project-navigation label {
         font-size: 16px;
-        padding: 5px;
+        padding: 6px;
     }
 
-    .projects label i {
-        font-size: 20px;
-        margin-left: -30px;
+    .project-navigation i {
+        font-size: 22px;
     }
 }
 
-/* For screens up to 320px */
+@media (max-width: 375px) {
+    .projects {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .project-img img {
+        height: 180px;
+    }
+
+    .project-top h1 {
+        font-size: 20px;
+    }
+
+    .project-top p {
+        font-size: 2rem;
+    }
+
+    .project-details p {
+        font-size: 14px;
+    }
+
+    .project-navigation {
+        width: 75px;
+        height: 35px;
+        gap: 8px;
+    }
+
+    .project-navigation label {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .project-navigation i {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 320px) {
+    .projects {
+        flex: 1 1 100%;
+        max-width: 450px;
+    }
+
+    .project-img img {
+        height: 250px;
+    }
+
     .project-top h1 {
         font-size: 18px;
     }
 
     .project-top p {
-        font-size: 1rem;
+        font-size: 1.95rem;
     }
 
     .project-details p {
         font-size: 13px;
     }
 
-    .project-link {
-        width: 100px;
-        padding: 3px 5px;
+    .project-navigation {
+        width: 70px;
+        height: 30px;
+        gap: 6px;
     }
 
-    .project-link i {
-        font-size: 14px;
+    .project-navigation label {
+        font-size: 12px;
         padding: 5px;
     }
 
-    .projects label i {
+    .project-navigation i {
         font-size: 18px;
-        margin-left: -25px;
     }
 }
+
+
 
 
 /* contanct section starts*/
