@@ -549,11 +549,7 @@ body{
    .clg{
     /* margin-bottom: 40px; */
     width: 500px;
-   }
-   .education{
-    /* margin-top: 20%; */
-   }
-    
+   }  
 }
 /*education section ends*/
 
@@ -808,7 +804,7 @@ body{
 
 .project-bottom {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 30px;
     justify-content: center;
     margin-top: 40px;
@@ -942,6 +938,10 @@ body{
     .project-top p {
         font-size: 1.5rem;
     }
+    .project-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
     .project-img{
         width:500px;
     }
@@ -959,14 +959,29 @@ body{
         padding: 4px 8px;
     }
 
+    .project-link:hover {
+        background: #7cf03d;
+        color: #1f242d;
+        cursor: pointer;
+    }
+
     .project-link i {
         font-size: 20px;
         padding: 7px;
     }
 
+    .project-link:hover a i {
+        transform: scale(1.09);
+        color: #1f242d;
+    }
+
     .projects label i {
         font-size: 24px;
         margin-left: -40px;
+    }
+
+    .projects label i:hover {
+        color: white;
     }
 }
 
